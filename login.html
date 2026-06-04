@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart OPD Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏥 Smart OPD Login</h1>
+
+    <p>Select Role and Login</p>
+
+    <select id="role">
+
+        <option value="admin">
+            Admin
+        </option>
+
+        <option value="doctor">
+            Doctor
+        </option>
+
+        <option value="lab">
+            Lab
+        </option>
+
+    </select>
+
+    <input
+    type="email"
+    id="email"
+    placeholder="Enter Email"
+    >
+
+    <input
+    type="password"
+    id="password"
+    placeholder="Enter Password"
+    >
+
+    <button onclick="login()">
+
+        Login
+
+    </button>
+
+    <button onclick="window.location.href='index.html'">
+
+        Back To Home
+
+    </button>
+
+</div>
+
+<!-- FIREBASE -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<!-- FIREBASE CONFIG -->
+
+<script src="js/firebase.js"></script>
+
+<!-- AUTH -->
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Admin Analytics</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📊 Admin Analytics</h1>
+
+    <div id="analytics">
+
+        <h2>
+            Total Patients:
+            <span id="totalPatients">0</span>
+        </h2>
+
+        <h2>
+            Waiting Patients:
+            <span id="waitingPatients">0</span>
+        </h2>
+
+        <h2>
+            Completed Patients:
+            <span id="completedPatients">0</span>
+        </h2>
+
+    </div>
+
+    <button onclick="window.location.href='dashboard.html'">
+
+        Back To Dashboard
+
+    </button>
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<script src="../js/firebase.js"></script>
+
+<!-- ANALYTICS MODULE -->
+
+<script src="../js/analytics.js"></script>
+
+
+<script src="../js/navigation.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

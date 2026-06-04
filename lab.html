@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🧪 Lab Dashboard</h1>
+
+<p>
+Upload Patient Reports
+</p>
+
+        <input type="text" id="labPatientID" placeholder="Enter Patient ID">
+
+        <button onclick="loadLabPatient()">
+            Search Patient
+        </button>
+
+        <div id="labPatientDetails"></div>
+
+        <textarea id="labReport"
+            placeholder="Enter Lab Report"></textarea>
+
+        <button onclick="uploadLabReport()">
+            Upload Report
+        </button>
+
+    </div>
+
+    <!-- Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyC8U_1w-bvEZIAA5_KraM_KjsK3DN-pX00",
+  authDomain: "smart-opd-system-f3f82.firebaseapp.com",
+  projectId: "smart-opd-system-f3f82",
+  storageBucket: "smart-opd-system-f3f82.firebasestorage.app",
+  messagingSenderId: "1047996365446",
+  appId: "1:1047996365446:web:6c050e72b3e20bd0e6af07",
+  measurementId: "G-EG60BLSNJS"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+</script>
+
+<!-- LAB MODULE -->
+
+<script src="../js/lab.js"></script>
+
+<script src="../js/navigation.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

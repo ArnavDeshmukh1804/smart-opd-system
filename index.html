@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart OPD System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🏥 Smart OPD System</h1>
+
+    <p>Digital Patient Registration</p>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter Patient Name"
+    >
+
+    <input
+        type="number"
+        id="age"
+        placeholder="Enter Age"
+    >
+
+    <input
+        type="number"
+        id="phone"
+        placeholder="Enter Phone Number"
+    >
+    <input
+    type="email"
+    id="email"
+    placeholder="Enter Email Address"
+    >
+    <input
+    type="date"
+    id="appointmentDate"
+  >
+
+    <input
+    type="time"
+    id="appointmentTime"
+    >
+    <select id="department">
+
+    <option value="General">
+        General
+    </option>
+
+    <option value="Cardiology">
+        Cardiology
+    </option>
+
+    <option value="Orthopedic">
+        Orthopedic
+    </option>
+
+    <option value="ENT">
+        ENT
+    </option>
+
+</select>
+
+    <button onclick="registerPatient()">
+
+        Register Patient
+
+    </button>
+
+    <button onclick="window.location.href='login.html'">
+
+        Go To Login
+
+    </button>
+
+    <h3 id="patientID"></h3>
+
+    <canvas id="qrcode"></canvas>
+
+</div>
+
+<!-- FIREBASE -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- QR CODE -->
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+
+<!-- FIREBASE CONFIG -->
+
+<script src="js/firebase.js"></script>
+
+<!-- MAIN SCRIPT -->
+
+<script src="js/register.js"></script>
+
+</body>
+
+</html>

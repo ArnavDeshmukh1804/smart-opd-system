@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Patient Report</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📄 Patient Medical Report</h1>
+
+    <p>Search Patient Report</p>
+
+    <input
+        type="text"
+        id="reportPatientID"
+        placeholder="Enter Patient ID"
+    >
+
+    <button onclick="loadReport()">
+
+        Load Report
+
+    </button>
+
+    <div id="reportContent">
+
+    </div>
+    <button onclick="sendEmailReport()">
+    Send Email Report
+    </button>
+    <button onclick="downloadPDF()">
+    Download PDF
+    </button>
+    <button onclick="window.location.href='dashboard.html'">
+
+        Back To Dashboard
+
+    </button>
+
+</div>
+
+<!-- FIREBASE -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<!-- FIREBASE CONFIG -->
+
+<script src="../js/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init("aag4ljjzUD6AhSaKT");
+</script>
+
+<!-- MAIN SCRIPT -->
+
+<script src="../js/report.js"></script>
+
+<script src="../js/navigation.js"></script>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
